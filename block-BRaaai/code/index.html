@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let data = (
+        <>
+          <div className="w-full h-screen bg-zinc-300 flex justify-center items-center ">
+            <div classname="w-56  bg-zinc-100 rounded border-2 border-sky-500">
+              <img
+                className=" overflow-hidden "
+                src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGVzZXJ0fGVufDB8fDB8fHww"
+                alt="Desert"
+              />
+
+              <div className="w-full bg-white">
+                <h2 className="text-xl">City Lights in New York </h2>
+                <h3> The city that never sleeps.</h3>
+                <p>
+                  {' '}
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Fugiat in laudantium placeat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
+      );
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(data);
+    </script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let data = (
+        <>
+          {/* Add a full-height div with Tailwind classes */}
+          <div className="w-full h-screen bg-zinc-500"></div>
+        </>
+      );
+
+      // Create root and render the JSX
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(data);
+    </script>
+  </body>
+</html> -->
